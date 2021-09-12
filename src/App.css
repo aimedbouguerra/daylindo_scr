@@ -1,0 +1,360 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+html {
+  font-size: 16px;
+  background-color:#F4F6F9;
+}
+
+body {
+  font: 100% / 1.414 sans-serif;
+}
+
+.menu{
+  width:200px;
+  min-height:1000px;
+  float:left;
+  background-color:rgba(196, 196, 196, 0.7);
+}
+
+.header{
+  height: 56px;
+  background: #FFFFFF;
+}
+
+.page{
+  width:1200px;
+  float:left;
+}
+
+.page-content{
+  padding:20px 50px;
+  float: left;
+}
+
+.page-name{
+  font-weight:bold;
+  font-size:22px;
+  text-align: left;
+}
+
+.badge {
+    padding: 4px 6px;
+    font-size: 9px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  background: linear-gradient(347.04deg, #FD3159 9.84%, #FD505A 91.14%);
+}
+
+.step div{
+  display:inline-block;
+  margin: 2px 10px;
+  padding: 5px 15px;
+  font-size:11px;
+}
+
+.step div span{
+  margin:0
+}
+
+.subtitle{
+  font-size:8px;
+}
+
+
+.MyNavBar,
+.AllContent{
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+form {
+  margin-right: 170px;
+  margin-left: 140px;
+  margin-top:20px;
+  width: 750px;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size:10px;
+  display: block;
+  color:#7F7F7F;
+}
+
+input {
+  width: 100%;
+  padding:15px;
+  font-size:15px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  transition: border-bottom-color .15s ease-in;
+}
+
+
+.button {
+  max-width: 96px;
+  max-height: 40px;
+  padding: 6px 12px;
+  margin-top:50px;
+  font-size: 12px;  
+  cursor: pointer;
+  transition: background-color .15s ease-in;
+}
+
+.next{
+  float: right;
+}
+.previous{
+  float: left;
+}
+
+.active{
+  color: #fff;
+  background: linear-gradient(347.04deg, #FD3159 9.84%, #FD505A 91.14%);
+  border: 0;
+  border-radius: 5px;
+}
+
+.inactive{
+  color :#B9B9C6;
+}
+
+.button.inactive{
+  border : 1px solid #B9B9C6;
+  border-radius: 5px;
+}
+
+.MyFormContent,
+.NavButton{
+  float: left;
+  width: 100%;
+}
+
+.selectedSkills{
+  width : 720px;
+  float: left;
+}
+
+.listSkills{
+
+}
+
+.dragdropZone{  
+  min-height :430px;
+  background: rgba(137, 136, 155, 0.08);
+  float: left;
+  margin-top: 10px;
+}
+
+.dragdropZone p{
+  display: table-cell;
+  color: #9C9CAC;
+  width : 700px;
+  height :430px;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.selectionSkills{
+  width: 300px;
+  background: #FFFFFF;
+  float: right;
+  padding:  10px 20px;
+}
+
+.selectionSkills h2{
+  font-size: 16px;
+}
+
+.selectionSkills h2 .Mytooltip{
+  float: right;
+}
+
+.selectionSkills input.search{
+  width: 240px;
+  font-size: 12px;
+  background: #F2F3F5 url(static/img/search_img.png) no-repeat scroll 10px 10px;
+  border-radius: 5px;
+  color: #7F7F7F;
+  font-weight: lighter;
+  padding: 10px 30px;
+}
+
+.listToSelectSkills{
+  margin-top: 10px;
+  height: 400px;
+}
+
+/* Works on Firefox */
+.listToSelectSkills {
+  scrollbar-width: thin;
+  scrollbar-color: #1F1E4180 #F2F3F5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.listToSelectSkills::-webkit-scrollbar {
+  width: 8px;
+}
+
+.listToSelectSkills::-webkit-scrollbar-track {
+  background: #F2F3F5;
+}
+
+.listToSelectSkills::-webkit-scrollbar-thumb {
+  background-color: #1F1E4180;
+  border-radius: 20px;
+  border: 2px solid #F2F3F5;
+}
+
+.listToSelectSkills ul,
+.listSkills ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listToSelectSkills button,
+.listSkills button{
+  display: table-cell;
+  width: 300px;
+  height: 56px;
+  background: #FFF;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 1px 1px 12px #F2F3F5;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.listSkills{
+  display: block;
+}
+
+.listSkills button{
+  float: left;
+  margin: 10px 20px;
+}
+
+.listToSelectSkills button p,
+.listSkills button p{
+  display: table-cell;
+  height :56px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.listToSelectSkills img,
+.listSkills img{
+  border: 1px solid #F2F3F5;
+  padding:  5px 8px;
+  width: 16px;
+  border-radius: 5px;
+}
+.listToSelectSkills img,
+.listToSelectSkills span,
+.listSkills img,
+.listSkills span{
+  float: left;
+}
+.listToSelectSkills span,
+.listSkills span{
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+
+/* Tooltip CSS */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #7F7F7F;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 20%;
+  margin-left: -146px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #7F7F7F transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
